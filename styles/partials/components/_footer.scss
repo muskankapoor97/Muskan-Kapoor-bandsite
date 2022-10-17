@@ -1,0 +1,68 @@
+@use "../breakpoints" as breakpoint;
+@use "../colors" as *;
+@use "../fonts" as *;
+.footer{
+    background-color:$black;
+    color:$mercury;
+    
+}
+.footer__heading,.contact__container{
+    margin:0;
+}
+
+@include breakpoint.small{
+    .footer{
+        padding:0 16px;
+
+        &__heading{
+           
+            padding-top: 24px;
+            padding-bottom: 16px;
+            font-size: 32px;
+            line-height: 32px;
+            font-family: Avenir-demi;
+            color: $white;
+            }
+        
+        &__icons{
+           display: flex;
+           justify-content: space-between;
+           max-width: 10em;
+        }
+        &__bottom{
+            padding-top:22%;
+            padding-bottom: 5%;
+
+        }
+        &__logo-top{
+            display: none;
+
+        }
+        &__logo-bottom{
+            height: 1.5em;
+        }
+        &__copyright{
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+    }
+    .icon{
+        height:2rem;
+        
+    }
+    .contact{
+
+        &__container,&__container-item{
+            padding-top: 16px;
+            padding-left: 0px;
+            font-size: 17px;
+            line-height: 25px; 
+        }
+        &__container-item--bold{
+            font-family: Avenir-demi;
+        }
+        
+       
+        
+    }
+}

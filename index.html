@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/bio.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <h1 class="navbar__logo">BANDSITE</h1>
+            <div class="navbar__logo">
+                <img src="./Assets/Logo/Logo-bandsite.svg" alt="bandsite logo" class="navbar__logo-image"/>
+            </div>
             <ul class="navbar__list">
-                <li class="navbar__list-item">Biography</li>
+                <li class="navbar__list-item navbar__list-item--active">Biography</li>
                 <li class="navbar__list-item">Shows</li>
             </ul>
         </nav>
@@ -19,19 +22,20 @@
     <main class="main">
         <section class="hero">
         
-            <img src="./Assets/Images/hero-bio.jpg" alt="flowers" class="hero__image"/>
-            <h2 class="hero__image-title">The Bees Knees</h2>
+            
+            <h1 class="hero__title">The Bees Knees</h1>
        
         </section>
         <section class="band">
-            <h2 class="band__heading">About the Musicians</h2>
+            <h2 class="band__title">About the Musicians</h2>
             <img src="./Assets/Images/band.jpg" class="band__image"/>
-            <p class="band__quote">We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'”</p>
+            <p class="band__quote">"We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'”</p>
             <p class="band__quote"> - Bryan Teddy, lead vocalist of The Bees Knees</p>
 
             <div>
             <h3 class="band__name">The Bees Knees</h3>
             <div class="band__description">
+            <div>    
                 <p class="band__description-para">The Bees Knees is a pop rock band originating from San Francisco, California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial success as an unsigned act, drawing attention from manager Cam Adams. Having worked with other popular acts (The Elephant In The Room, One Trick Pony, The Cat's Meow), Adams was confident the band could succeed even further, pushing them to sign with Magenta Records.</p>
             </div>
             <div>
@@ -42,48 +46,50 @@
         </section>
         <article class="gallery">
             <h2 class="gallery__heading">Photo Gallery</h2>
-            <div class="gallery__images">
-            <img src="./Assets/Images/Photo-gallery-1.jpg" class="gallery__image" />
-            <img src="./Assets/Images/Photo-gallery-2.jpg" class="gallery__image"/>
-            <img src="./Assets/Images/Photo-gallery-3.jpg" class="gallery__image"/>
-            <img src="./Assets/Images/Photo-gallery-4.jpg" class="gallery__image"/>
-            <img src="./Assets/Images/Photo-gallery-5.jpg" class="gallery__image"/>
-            <img src="./Assets/Images/Photo-gallery-6.jpg" class="gallery__image"/>
-            <img src="./Assets/Images/Photo-gallery-7.jpg" class="gallery__image"/>
-            <img src="./Assets/Images/Photo-gallery-8.jpg" class="gallery__image"/>
-            <img src="./Assets/Images/Photo-gallery-9.jpg" class="gallery__image"/>
-            </div>
+            <ul class="gallery__list">
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-1.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-2.jpg" class="gallery__image" /></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-3.jpg" class="gallery__image" /></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-4.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-5.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-6.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-7.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-8.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-9.jpg" class="gallery__image"/></li>
+            </ul>
         </article>
     </main>
     <footer class="footer">
-        <div>
-        <h2>Get In Touch</h2>
-        <div class="icons">
-            <img src="./Assets/Icons/SVG/Icon-instagram.svg"/>
-            <img src="./Assets/Icons/SVG/Icon-facebook.svg"/>
-            <img src="./Assets/Icons/SVG/Icon-twitter.svg"/>
+        <div class="footer__top">
+        <h2 class="footer__heading">Get In Touch</h2>
+        <div class="footer__icons">
+            <img src="./Assets/Icons/SVG/Icon-instagram.svg" class="icon"/>
+            <img src="./Assets/Icons/SVG/Icon-facebook.svg"class="icon"/>
+            <img src="./Assets/Icons/SVG/Icon-twitter.svg"class="icon"/>
+            <img src="./Assets/Logo/Logo-bandsite.svg" class="footer__logo-top" alt="bandsite__logo"/>
         </div>
         </div>
-        <div>
-        <div>
-            <p>Cam Adams The Bees Knees Management</p>
-            <p>503 Broadway Penthouse, <br>New York, NY 10012, USA</p>
-            <p>info@thebeesknees.com</p>
+        <div class="contact">
+        <ul class="contact__container">
+            <li class="contact__container-item contact__container-item--bold">Cam Adams<br> The Bees Knees Management</li>
+            <li class="contact__container-item">503 Broadway Penthouse, <br>New York, NY 10012, USA</li>
+            <li class="contact__container-item">info@thebeesknees.com</li>
+        </ul>
+        <ul class="contact__container">
+            <li class="contact__container-item contact__container-item--bold">Pearl Gregg<br> Limitless Artist Group</li>
+            <li class="contact__container-item">Booking Agent for <br>US / South America / Japan</li>
+            <li class="contact__container-item">pearl.gregg@limitlessag.com</li>
+        </ul>
+        <ul class="contact__container">
+            <li class="contact__container-item contact__container-item--bold">Carson Whyte <br>ARCH Entertainment</li>
+            <li class="contact__container-item">Booking Agent for<br> UK / EU / AU</li>
+            <li class="contact__container-item">cwhyte@archentertainment.com</li>
+        </ul>
         </div>
-        <div>
-            <p>Pearl Gregg Limitless Artist Group</p>
-            <p>Booking Agent for <br>US / South America / Japan</p>
-            <p>pearl.gregg@limitlessag.com</p>
-        </div>
-        <div>
-            <p>Carson Whyte ARCH Entertainment</p>
-            <p>Booking Agent for<br> UK / EU / AU</p>
-            <p>cwhyte@archentertainment.com</p>
-        </div>
-        </div>
-        <div>
-        <p>BANDSITE</p>
-        <p>Copyright The Bees Knees © 2021 All Rights Reserved</p>
+        <div class="footer__bottom">
+            <img src="./Assets/Logo/Logo-bandsite.svg" class="footer__logo-bottom" alt="bandsite__logo"/>
+       
+        <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
         </div>
 
     </footer>

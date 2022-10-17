@@ -1,0 +1,99 @@
+@use "../breakpoints" as breakpoint;
+@use "../colors" as *;
+@use "../fonts" as *;
+.hero{
+    background-image: url(../../../Assets/Images/hero-bio.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(0,0,0, 0.5) ;
+    width: 100vw;
+    height: 15.2rem;
+    position:relative;
+    margin: 0;
+}
+.hero__title{
+    position:absolute;
+    top:44%;
+    color: $white;
+}
+.hero__title,.band__title,.band__quote,.band__name,.gallery__heading,.gallery__list{
+    margin:0;
+}
+.band__description,.__band__quote{
+    color: $black;
+}
+
+.band__image{
+    height:17vh;
+    width: 100%;
+}
+.gallery{
+    background-color: $alabaster;
+    
+    &__image{
+        width: 100%;
+        object-fit: contain;
+        
+     }
+}
+@include breakpoint.small{
+    .hero,.band{
+        padding: 0 16px;
+    
+    &__title{
+        font-size: 32px;
+        line-height: 32px;
+        font-family: Avenir-demi;
+        
+    }
+}
+    .band{
+        margin: 0;
+        &__title{
+            padding-top: 24px;
+            padding-bottom: 16px;
+        }
+        &__quote{
+            font-size: 18px;
+            line-height: 30px;
+            font-family: Avenir-demi;
+            word-spacing: 2px;
+            padding-top: 16px;
+        }
+        &__name{
+            padding-top: 24px;
+            padding-bottom: 16px;
+            color: $darkblack;
+           
+        }
+        &__description{
+            font-size: 17px;
+            line-height: 23px;
+            word-spacing: 2px;
+            padding-top: 0px;
+            font-family:Avenir-regular;
+        }
+
+    }
+    .gallery{
+        padding: 0 16px;
+        &__list{
+            display: flex;
+            flex-direction: column;
+            padding: 0%; 
+        }
+        &__heading{
+            padding-top: 24px;
+            padding-bottom: 16px;
+            font-size: 32px;
+            line-height: 32px;
+            font-family: Avenir-demi;
+        }
+        &__image{
+            margin-bottom: 4%;
+        }
+   
+    
+}
+}

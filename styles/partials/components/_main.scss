@@ -2,7 +2,7 @@
 @use "../colors" as *;
 @use "../fonts" as *;
 .hero{
-    background-image:url(../../../Assets/Images/hero-bio.jpg);
+    background-image:url(../Assets/Images/hero-bio.jpg);;
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;

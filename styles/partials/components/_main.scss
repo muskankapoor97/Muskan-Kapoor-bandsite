@@ -2,16 +2,23 @@
 @use "../colors" as *;
 @use "../fonts" as *;
 .hero{
-    background-image: url(../../../Assets/Images/hero-bio.jpg);
+    background-image:url(../../../Assets/Images/hero-bio.jpg);
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color:rgba(0,0,0, 0.5) ;
     width: 100vw;
     height: 15.2rem;
     position:relative;
     margin: 0;
 }
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding:0 16px;
+  background: rgba(0, 0, 0, 0.50);
+}
+
 .hero__title{
     position:absolute;
     top:45%;
@@ -38,10 +45,16 @@
      }
 }
 // @include breakpoint.small{
-    .hero,.band{
+    .band{
         padding: 0 16px;
     
     &__title{
+        font-size: 32px;
+        line-height: 32px;
+        font-family: Avenir-demi;
+        
+    }
+    .hero__title{
         font-size: 32px;
         line-height: 32px;
         font-family: Avenir-demi;
@@ -98,7 +111,7 @@
 }
 // 
 @include breakpoint.medium{
-    .hero,.band{
+    .overlay,.band{
         padding: 0 36px;
     
     
@@ -169,4 +182,17 @@
 }
 }
 
+}
+
+@include breakpoint.large{
+    .overlay,.band,.gallery{
+        padding: 0 10rem;
+    }
+    .hero{
+        height:46rem;
+        object-position: top;
+    }
+    .band__image{
+        height:48vh;
+    }
 }

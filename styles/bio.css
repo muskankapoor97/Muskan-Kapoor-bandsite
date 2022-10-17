@@ -99,16 +99,32 @@ header {
     margin-left: 5rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  header {
+    padding: 0 10rem;
+  }
+  .navbar__logo {
+    margin: 0%;
+    padding-top: 2%;
+  }
+}
 .hero {
   background-image: url(../../../Assets/Images/hero-bio.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 15.2rem;
   position: relative;
   margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 16px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero__title {
@@ -139,10 +155,15 @@ header {
      object-fit: contain;
 }
 
-.hero, .band {
+.band {
   padding: 0 16px;
 }
-.hero__title, .band__title {
+.band__title {
+  font-size: 32px;
+  line-height: 32px;
+  font-family: Avenir-demi;
+}
+.band .hero__title {
   font-size: 32px;
   line-height: 32px;
   font-family: Avenir-demi;
@@ -195,7 +216,7 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .hero, .band {
+  .overlay, .band {
     padding: 0 36px;
   }
   .hero {
@@ -257,8 +278,26 @@ header {
     margin: 0.8em;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .overlay, .band, .gallery {
+    padding: 0 10rem;
+  }
+  .hero {
+    height: 46rem;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .band__image {
+    height: 48vh;
+  }
+}
 .footer {
   background-color: #323232;
+  color: #E1E1E1;
+}
+
+a {
+  text-decoration: none;
   color: #E1E1E1;
 }
 
@@ -348,13 +387,23 @@ header {
   }
   .contact {
     display: flex;
-    justify-content: space-between;
+  }
+  .contact__container {
+    margin-right: 5em;
   }
   .contact__container, .contact__container-item {
     padding-top: 36px;
   }
   .contact__container-item--bold {
     padding-top: 0%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 0 10rem;
+  }
+  .footer__logo-top {
+    margin-left: 24rem;
   }
 }
 html, body {

@@ -6,6 +6,10 @@
     color:$mercury;
     
 }
+a{
+    text-decoration: none;
+    color:$mercury;
+}
 .footer__heading,.contact__container{
     margin:0;
 }
@@ -107,8 +111,9 @@
  }
  .contact{
      display: flex;
-     justify-content: space-between;
-
+     &__container{
+        margin-right: 5em;
+     }
      &__container,&__container-item{
         padding-top: 36px;
     }
@@ -116,4 +121,12 @@
         padding-top: 0%;
     }
     } 
+ }
+ @include breakpoint.large{
+    .footer{
+        padding: 0 10rem;
+        &__logo-top{
+            margin-left: 24rem;
+        }
+    }
  }

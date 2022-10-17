@@ -2,11 +2,13 @@
 @use "../colors" as *;
 @use "../fonts" as *;
 
-
+header{
+    background-color:$black;
+}
 
 
 .navbar{
-    background-color:$black;
+    
     color: $mercury;
     font-size: 24px;
     line-height: 32px;
@@ -36,7 +38,7 @@
 
 
 
-@include breakpoint.small{
+// @include breakpoint.small{
     .header{
         padding: 0 16px;
     }
@@ -64,6 +66,29 @@
                 padding-left: 30px;
             }
 
+}
+// }
+
+@include breakpoint.medium{
+    header{
+        padding: 0 36px;
+    }
+    .navbar{
+        padding-top: 12px;
+            display: flex;
+       &__logo{
+       margin: 0%;
+       padding-left:0%;
+       padding-top: 3%;
+       margin-right: 8%;
+       }
+       &__list-item{
+        padding-left: 0%;
+        padding-bottom: 1.3rem;
+        margin-left: 5rem;
+        
+    }
+       
 }
 }
 

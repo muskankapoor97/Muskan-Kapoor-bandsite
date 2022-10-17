@@ -3,7 +3,7 @@
 @use "../fonts" as *;
 .hero{
     background-image: url(../../../Assets/Images/hero-bio.jpg);
-    background-position:center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-color:rgba(0,0,0, 0.5) ;
@@ -14,7 +14,7 @@
 }
 .hero__title{
     position:absolute;
-    top:44%;
+    top:45%;
     color: $white;
 }
 .hero__title,.band__title,.band__quote,.band__name,.gallery__heading,.gallery__list{
@@ -37,7 +37,7 @@
         
      }
 }
-@include breakpoint.small{
+// @include breakpoint.small{
     .hero,.band{
         padding: 0 16px;
     
@@ -96,4 +96,77 @@
    
     
 }
+// 
+@include breakpoint.medium{
+    .hero,.band{
+        padding: 0 36px;
+    
+    
+
+}
+.hero{
+    height:35rem;
+    &__title{
+        font-size: 78px;
+        line-height: 44px; 
+    }
+}
+.band{
+    &__image{
+        height:33vh;
+        padding-bottom: 36px;
+    }
+    &__wrapper{
+        margin: 0 auto;
+        width: 83%;
+    }    
+    &__quote{
+        font-size: 27px;
+        line-height: 37px;
+    }
+    &__quote--regular{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    &__name{
+        padding-top: 48px;
+        padding-bottom: 36px;
+        font-size: 31px;
+        font-family: Avenir-demi;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        line-height: 27px;
+    }
+    &__description-para{
+        margin: 0%;
+    }
+}
+.band__title,.gallery__heading{
+        padding-top: 48px;
+        padding-bottom: 36px;
+        font-size: 47px;
+        line-height: 44px; 
+    }
+
+.gallery{
+    padding:0 36px;
+  
+&__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width: 100%;
+   
+}
+&__list-item{
+    width: 30%;
+    margin: 0.8em;
+}
+}
+
 }

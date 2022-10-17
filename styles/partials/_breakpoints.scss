@@ -1,10 +1,10 @@
-$mobile-min-width: 320px;
+$mobile-max-width: 767px;
 $tablet-min-width: 768px;
 $desktop-min-width: 1280px;
 
 /* media query for mobile */
 @mixin small {
-  @media only screen and (max-width: $mobile-min-width) {
+  @media only screen and (max-width: $mobile-max-width) {
     /* placeholder for css properties that needs to be applied for this media query */
     @content;
   }

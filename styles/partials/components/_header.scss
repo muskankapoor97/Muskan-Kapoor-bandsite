@@ -11,7 +11,7 @@ header{
     
     color: $mercury;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 45px;
     width: 100vw;
     
     font-family:Avenir-regular;
@@ -19,7 +19,7 @@ header{
         &__logo{
             max-height: 20px;
             max-width: 120px;
-            padding: 2%;
+            padding: 3% 0;
         }
         
         &__list{
@@ -57,7 +57,7 @@ header{
             display: flex;
             justify-content: space-around;
             text-align: center;
-            font-size: 18px;
+            font-size: 17px;
             padding-top:24px;
             padding-left: 0%;
             }

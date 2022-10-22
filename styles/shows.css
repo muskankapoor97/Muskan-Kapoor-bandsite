@@ -108,15 +108,24 @@ header {
     padding-top: 2%;
   }
 }
-.hero {
-  background-image: url(../assets/images/hero-bio.jpg);
+.overlay__heroPara p, .overlay__heroHeading, hr {
+  margin: 0;
+}
+
+.main__shows-hero {
+  background-image: url(../assets/images/hero-shows.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 16.2rem;
+  height: 23.2rem;
   position: relative;
   margin: 0;
+}
+
+.overlay__heroHeading, .overlay__heroPara {
+  position: absolute;
+  color: #FFFFFF;
 }
 
 .overlay {
@@ -126,173 +135,60 @@ header {
   padding: 0 16px;
   background: rgba(0, 0, 0, 0.5);
 }
-
-.hero__title {
-  position: absolute;
-  top: 40%;
-  color: #FFFFFF;
-  font-size: 32px;
+.overlay__heroHeading {
+  top: 12%;
+  font-size: 1.2rem;
+}
+.overlay__heroPara {
+  top: 26%;
+  font-size: 2rem;
   font-family: avenir-demi;
 }
 
-.hero__title, .band__title, .band__quote, .band__name, .gallery__heading, .gallery__list {
-  margin: 0;
-}
-
-.band__description, .__band__quote {
-  color: #323232;
-}
-
-.band__image {
-  height: 17vh;
-  width: 100%;
-}
-
-.gallery {
-  background-color: #FAFAFA;
-}
-.gallery__image {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.band {
-  padding: 0 16px;
-}
-.band__title {
-  font-size: 32px;
-  line-height: 32px;
-  font-family: Avenir-demi;
-}
-.band .hero__title {
+.main__shows-detailsHeading {
+  margin-bottom: 0;
+  padding: 24px 16px 0px;
   font-size: 32px;
   line-height: 32px;
   font-family: Avenir-demi;
 }
 
-.band {
-  margin: 0;
+.tickets {
+  margin-bottom: 16px;
 }
-.band__title {
-  padding-top: 24px;
-  padding-bottom: 16px;
+
+.ticket {
+  padding: 16px;
 }
-.band__quote {
-  font-size: 18px;
-  line-height: 30px;
-  font-family: Avenir-demi;
-  word-spacing: 2px;
-  padding-top: 16px;
+.ticket__heading {
+  color: #AFAFAF;
+  font-size: 0.8rem;
 }
-.band__name {
-  padding-top: 24px;
-  padding-bottom: 16px;
-  color: #000000;
-}
-.band__description {
+.ticket__content {
   font-size: 17px;
-  line-height: 23px;
-  word-spacing: 2px;
-  padding-top: 0px;
-  font-family: Avenir-regular;
+}
+.ticket__content--bold {
+  font-family: avenir-demi;
+}
+.ticket__button {
+  background-color: #323232;
+  color: #FFFFFF;
+  height: 52px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: avenir-demi;
+}
+.ticket__button:hover {
+  background-color: #000000;
 }
 
-.gallery {
-  padding: 0 16px;
-}
-.gallery__list {
-  display: flex;
-  flex-direction: column;
-  padding: 0%;
-}
-.gallery__heading {
-  padding-top: 24px;
-  padding-bottom: 16px;
-  font-size: 32px;
-  line-height: 32px;
-  font-family: Avenir-demi;
-}
-.gallery__image {
-  margin-bottom: 4%;
+hr {
+  border: 1px solid #E1E1E1;
 }
 
-@media only screen and (min-width: 768px) {
-  .overlay, .band {
-    padding: 0 36px;
-  }
-  .hero {
-    height: 35rem;
-  }
-  .hero__title {
-    font-size: 78px;
-    line-height: 44px;
-  }
-  .band__image {
-    height: 33vh;
-    padding-bottom: 36px;
-  }
-  .band__wrapper {
-    margin: 0 auto;
-    width: 83%;
-  }
-  .band__quote {
-    font-size: 27px;
-    line-height: 37px;
-  }
-  .band__quote--regular {
-    font-size: 20px;
-    line-height: 22px;
-  }
-  .band__name {
-    padding-top: 48px;
-    padding-bottom: 36px;
-    font-size: 31px;
-    font-family: Avenir-demi;
-  }
-  .band__description {
-    display: flex;
-    justify-content: space-between;
-    font-size: 17px;
-    line-height: 27px;
-  }
-  .band__description-para {
-    margin: 0%;
-  }
-  .band__title, .gallery__heading {
-    padding-top: 48px;
-    padding-bottom: 36px;
-    font-size: 47px;
-    line-height: 44px;
-  }
-  .gallery {
-    padding: 0 36px;
-  }
-  .gallery__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-  .gallery__list-item {
-    width: 30%;
-    margin: 0.8em;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .overlay, .band, .gallery {
-    padding: 0 10rem;
-  }
-  .hero {
-    height: 46rem;
-    -o-object-position: top;
-       object-position: top;
-  }
-  .band__image {
-    height: 48vh;
-  }
-}
 .footer {
   background-color: #323232;
   color: #E1E1E1;
@@ -422,4 +318,4 @@ html, body {
 
 ul {
   list-style-type: none;
-}/*# sourceMappingURL=bio.css.map */
+}/*# sourceMappingURL=shows.css.map */

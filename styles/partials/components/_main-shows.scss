@@ -25,7 +25,7 @@
    height: 100%;
    width: 100%;
    padding:0 16px;
- background: rgba(0, 0, 0, 0.50);
+ background: rgba(50, 50, 50, 0.40);
 
    &__heroHeading{
    top:12%;
@@ -49,14 +49,19 @@
     font-family: Avenir-demi;
 }
 .tickets{
-   margin-bottom:16px
+   margin-bottom:16px;
+   &__headings-tablet{
+      display:none;
+   }
 }
+
 .ticket{
    padding:16px;
 
    &__heading{
    color:$silver;
    font-size:0.8rem;
+   display:block;
    }
    &__content{
       font-size: 17px;
@@ -82,3 +87,74 @@
 hr{
    border: 1px solid $mercury;
 }
+
+@include breakpoint.medium{
+   .main__shows-hero{
+      height:41.2rem;
+    
+      
+   
+   .overlay{
+      &__heroHeading{
+         font-size:2rem;
+         font-family: avenir-demi;
+      }
+      &__heroPara{
+         top:20%;
+         font-size: 5rem;
+      }
+      }
+   }
+
+.overlay,.main__shows-details{
+   padding:0 36px;
+}
+.main__shows-detailsHeading{
+   margin-top:2.5rem;
+   padding-top: 48px;
+   padding-bottom: 36px;
+   font-size: 3rem;
+}
+.tickets{
+   margin:1.7rem 0;
+   &__headings-tablet{
+      display:flex;
+      justify-content: space-between;
+      color:$silver;
+      width:76%;
+      padding-left: 13px;
+      font-size: 14px;
+      font-family: avenir-demi;
+   }
+   &__heading-tablet{
+   
+      width:60%;
+   }
+}
+
+.ticket{
+   display: flex;
+   justify-content: space-between;
+   &__heading{
+      display:none;
+   }
+   &__content{
+      width:20%;
+      font-size: 18px;
+   }
+   &__button{
+      width:23%;
+   }
+}
+}
+@include breakpoint.large{
+   .main__shows-details{
+      display:flex;
+      justify-content: space-between;
+   }
+}
+
+
+
+   
+

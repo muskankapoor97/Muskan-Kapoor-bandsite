@@ -133,7 +133,7 @@ header {
   height: 100%;
   width: 100%;
   padding: 0 16px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(50, 50, 50, 0.4);
 }
 .overlay__heroHeading {
   top: 12%;
@@ -156,6 +156,9 @@ header {
 .tickets {
   margin-bottom: 16px;
 }
+.tickets__headings-tablet {
+  display: none;
+}
 
 .ticket {
   padding: 16px;
@@ -163,6 +166,7 @@ header {
 .ticket__heading {
   color: #AFAFAF;
   font-size: 0.8rem;
+  display: block;
 }
 .ticket__content {
   font-size: 17px;
@@ -189,6 +193,63 @@ hr {
   border: 1px solid #E1E1E1;
 }
 
+@media only screen and (min-width: 768px) {
+  .main__shows-hero {
+    height: 41.2rem;
+  }
+  .main__shows-hero .overlay__heroHeading {
+    font-size: 2rem;
+    font-family: avenir-demi;
+  }
+  .main__shows-hero .overlay__heroPara {
+    top: 20%;
+    font-size: 5rem;
+  }
+  .overlay, .main__shows-details {
+    padding: 0 36px;
+  }
+  .main__shows-detailsHeading {
+    margin-top: 2.5rem;
+    padding-top: 48px;
+    padding-bottom: 36px;
+    font-size: 3rem;
+  }
+  .tickets {
+    margin: 1.7rem 0;
+  }
+  .tickets__headings-tablet {
+    display: flex;
+    justify-content: space-between;
+    color: #AFAFAF;
+    width: 76%;
+    padding-left: 13px;
+    font-size: 14px;
+    font-family: avenir-demi;
+  }
+  .tickets__heading-tablet {
+    width: 60%;
+  }
+  .ticket {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ticket__heading {
+    display: none;
+  }
+  .ticket__content {
+    width: 20%;
+    font-size: 18px;
+  }
+  .ticket__button {
+    width: 23%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .main__shows-details {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer {
   background-color: #323232;
   color: #E1E1E1;

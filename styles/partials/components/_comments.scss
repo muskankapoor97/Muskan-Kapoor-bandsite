@@ -1,0 +1,130 @@
+@use "../breakpoints" as breakpoint;
+@use "../colors" as *;
+@use "../fonts" as *;
+.comment__content,.comments__heading,.comment__name,.comment__date{
+    margin:0;
+    
+}
+.form__wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+.comments{
+    padding:0 16px;
+    &__heading{
+        padding-top:24px;
+        padding-bottom: 16px;
+        font-size: 32px;
+        line-height: 32px;
+        font-family: Avenir-demi;
+    }
+    &__image-container{
+        background:url(../../../assets/images/Mohan-muruge.jpg);
+        border-radius: 50%;
+        width: 48px;
+        max-height: 48px;
+        margin-top: 1rem;
+        object-position: center;
+        
+    }
+    &__container{
+        font-size: 17px;
+        line-height: 23px;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    &__form{
+        width: 82%;
+        &-inputContainer{
+            padding-bottom: 16px;
+        }
+        &-label{
+            padding-bottom: 4px;
+            font-size: 14px;
+        }
+        &-nameInput,&-textareaInput{
+            width: 100%;
+            border-radius: 4px;
+            padding: 12px;
+            border:1px solid $mercury;
+            background-color: #f9f9f9;
+        }
+        &-nameInput{
+            height: 52px;
+            
+        }
+        &-textareaInput{
+            height:8rem;
+            
+        }
+        &-submit{
+            background-color: $black;
+            color: $white;
+            height: 52px;
+            width: 100%;
+            border:none;
+            border-radius: 4px;
+            font-size: 20px;
+            line-height: 20px;
+            font-family: avenir-demi;
+   }
+        &-submit:hover{
+            background-color: $darkblack;
+        }
+        }
+    }
+    
+
+.comment{
+   max-width: 82%;
+    &__container{
+        display:flex;
+        justify-content:space-between;
+        
+
+
+    }
+    &__image-container{
+        background-color: $mercury;
+        border-radius: 50%;
+        
+        width: 48px;
+        max-height: 48px;
+        margin-top: 1rem;
+       
+    }
+    &__heading{
+        display: flex;
+        justify-content: space-between;
+        padding:16px 0;
+    }
+    
+    &__name{
+    font-family: avenir-demi;
+    
+    }
+    &__content{
+        color:$darkblack;
+    }
+}
+.comment__date,label{
+    color:$silver;
+    }
+hr{
+    border: 1px solid $mercury;
+}
+
+@include breakpoint.medium{
+    .comments{
+        &__heading{
+            font-size: 47px;
+            line-height: 44px;
+            padding-top: 48px;
+            padding-bottom: 36px;
+        }
+    }
+
+}

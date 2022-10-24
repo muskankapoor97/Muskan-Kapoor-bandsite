@@ -293,6 +293,120 @@ header {
     height: 48vh;
   }
 }
+.comment__content, .comments__heading, .comment__name, .comment__date {
+  margin: 0;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comments {
+  padding: 0 16px;
+}
+.comments__heading {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  font-size: 32px;
+  line-height: 32px;
+  font-family: Avenir-demi;
+}
+.comments__image-container {
+  background: url(../../../assets/images/Mohan-muruge.jpg);
+  border-radius: 50%;
+  width: 48px;
+  max-height: 48px;
+  margin-top: 1rem;
+  -o-object-position: center;
+     object-position: center;
+}
+.comments__container {
+  font-size: 17px;
+  line-height: 23px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.comments__form {
+  width: 82%;
+}
+.comments__form-inputContainer {
+  padding-bottom: 16px;
+}
+.comments__form-label {
+  padding-bottom: 4px;
+  font-size: 14px;
+}
+.comments__form-nameInput, .comments__form-textareaInput {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #E1E1E1;
+  background-color: #f9f9f9;
+}
+.comments__form-nameInput {
+  height: 52px;
+}
+.comments__form-textareaInput {
+  height: 8rem;
+}
+.comments__form-submit {
+  background-color: #323232;
+  color: #FFFFFF;
+  height: 52px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: avenir-demi;
+}
+.comments__form-submit:hover {
+  background-color: #000000;
+}
+
+.comment {
+  max-width: 82%;
+}
+.comment__container {
+  display: flex;
+  justify-content: space-between;
+}
+.comment__image-container {
+  background-color: #E1E1E1;
+  border-radius: 50%;
+  width: 48px;
+  max-height: 48px;
+  margin-top: 1rem;
+}
+.comment__heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.comment__name {
+  font-family: avenir-demi;
+}
+.comment__content {
+  color: #000000;
+}
+
+.comment__date, label {
+  color: #AFAFAF;
+}
+
+hr {
+  border: 1px solid #E1E1E1;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments__heading {
+    font-size: 47px;
+    line-height: 44px;
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+}
 .footer {
   background-color: #323232;
   color: #E1E1E1;

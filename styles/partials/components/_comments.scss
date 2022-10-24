@@ -27,7 +27,7 @@
         width: 48px;
         max-height: 48px;
         margin-top: 1rem;
-        object-position: center;
+        object-fit: contain;
         
     }
     &__container{
@@ -44,6 +44,7 @@
         &-label{
             padding-bottom: 4px;
             font-size: 14px;
+            font-family: avenir-demi;
         }
         &-nameInput,&-textareaInput{
             width: 100%;
@@ -100,6 +101,7 @@
         display: flex;
         justify-content: space-between;
         padding:16px 0;
+        font-size: 1rem;
     }
     
     &__name{
@@ -119,12 +121,77 @@ hr{
 
 @include breakpoint.medium{
     .comments{
+        padding:0 36px;
+        &__wrapper{
+            padding:0 6rem;
+        }
         &__heading{
             font-size: 47px;
             line-height: 44px;
             padding-top: 48px;
             padding-bottom: 36px;
         }
+        &__image-container{
+            width:62px;
+            max-height:62px;
+        }
+        &__form{
+            width:90%
+        }
+        &__container{
+            font-size: 19px;
+            line-height: 27px;
+            margin-bottom: 2.5rem;
+            
+        }
+        &__form{
+            &-label{
+                font-size: 16px;
+        }
+        
+        &-nameInput,&-textareaInput{
+            padding:16px;
+            border:2px solid $mercury;
+        }
+        &-inputContainer{
+            padding-bottom: 30px;
+        }
+        
+        &-submit{
+            max-width: 29%;
+            margin-left:31rem;
+        }
+    }
+}
+    .comment{
+        padding-top:1.5rem;
+        padding-bottom: 1.5rem;
+        max-width:90%;
+        &__image-container{
+            width:62px;
+            max-height:62px;
+        }
+       
+        
     }
 
+}
+@include breakpoint.large{
+    .comments{
+        padding:0 10rem;
+        &__wrapper{
+            padding:0 24rem;
+        }
+        &__form{
+            width:87%;
+            &-submit{
+                max-width: 40%;
+                margin-left:19rem;
+            }
+        }
+    }
+    .comment{
+        max-width: 87%;
+        padding-top: 0;
+    }
 }

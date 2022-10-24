@@ -229,7 +229,7 @@ header {
     line-height: 44px;
   }
   .band__image {
-    height: 33vh;
+    height: 38vh;
     padding-bottom: 36px;
   }
   .band__wrapper {
@@ -318,8 +318,8 @@ header {
   width: 48px;
   max-height: 48px;
   margin-top: 1rem;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .comments__container {
   font-size: 17px;
@@ -336,6 +336,7 @@ header {
 .comments__form-label {
   padding-bottom: 4px;
   font-size: 14px;
+  font-family: avenir-demi;
 }
 .comments__form-nameInput, .comments__form-textareaInput {
   width: 100%;
@@ -383,6 +384,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
+  font-size: 1rem;
 }
 .comment__name {
   font-family: avenir-demi;
@@ -400,11 +402,71 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  .comments {
+    padding: 0 36px;
+  }
+  .comments__wrapper {
+    padding: 0 6rem;
+  }
   .comments__heading {
     font-size: 47px;
     line-height: 44px;
     padding-top: 48px;
     padding-bottom: 36px;
+  }
+  .comments__image-container {
+    width: 62px;
+    max-height: 62px;
+  }
+  .comments__form {
+    width: 90%;
+  }
+  .comments__container {
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 2.5rem;
+  }
+  .comments__form-label {
+    font-size: 16px;
+  }
+  .comments__form-nameInput, .comments__form-textareaInput {
+    padding: 16px;
+    border: 2px solid #E1E1E1;
+  }
+  .comments__form-inputContainer {
+    padding-bottom: 30px;
+  }
+  .comments__form-submit {
+    max-width: 29%;
+    margin-left: 31rem;
+  }
+  .comment {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 90%;
+  }
+  .comment__image-container {
+    width: 62px;
+    max-height: 62px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .comments {
+    padding: 0 10rem;
+  }
+  .comments__wrapper {
+    padding: 0 24rem;
+  }
+  .comments__form {
+    width: 87%;
+  }
+  .comments__form-submit {
+    max-width: 40%;
+    margin-left: 19rem;
+  }
+  .comment {
+    max-width: 87%;
+    padding-top: 0;
   }
 }
 .footer {

@@ -2,12 +2,12 @@
 @use "../colors" as *;
 @use "../fonts" as *;
 .hero{
-    background-image:url(../Assets/Images/hero-bio.jpg);;
+    background-image:url(../assets/images/hero-bio.jpg);;
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 15.2rem;
+    height: 16.2rem;
     position:relative;
     margin: 0;
 }
@@ -16,13 +16,15 @@
     height: 100%;
     width: 100%;
     padding:0 16px;
-  background: rgba(0, 0, 0, 0.50);
+  background: rgba(50, 50, 50, 0.40);
 }
 
 .hero__title{
     position:absolute;
-    top:45%;
+    top:40%;
     color: $white;
+    font-size: 32px;
+    font-family: avenir-demi;
 }
 .hero__title,.band__title,.band__quote,.band__name,.gallery__heading,.gallery__list{
     margin:0;
@@ -126,7 +128,7 @@
 }
 .band{
     &__image{
-        height:33vh;
+        height:38vh;
         padding-bottom: 36px;
     }
     &__wrapper{

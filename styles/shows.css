@@ -144,6 +144,10 @@ header {
   font-size: 2rem;
   font-family: avenir-demi;
 }
+.overlay__song {
+  top: 45%;
+  width: 40%;
+}
 
 .main__shows-detailsHeading {
   margin-bottom: 0;
@@ -248,6 +252,10 @@ hr {
   .main__shows-details {
     display: flex;
     justify-content: space-between;
+    padding: 0 120px;
+  }
+  .tickets {
+    width: 70%;
   }
 }
 .footer {

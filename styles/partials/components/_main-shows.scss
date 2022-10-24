@@ -36,6 +36,10 @@
    font-size: 2rem;
    font-family: avenir-demi;
    }
+   &__song{
+      top:45%;
+      width:40%;
+   }
 }
 // .main__shows-details{
 //    padding: 0 16px;
@@ -151,6 +155,10 @@ hr{
    .main__shows-details{
       display:flex;
       justify-content: space-between;
+      padding:0 120px;
+   }
+   .tickets{
+      width:70%;
    }
 }
 

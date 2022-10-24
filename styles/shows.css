@@ -144,9 +144,12 @@ header {
   font-size: 2rem;
   font-family: avenir-demi;
 }
-.overlay__song {
-  top: 45%;
-  width: 40%;
+
+iframe {
+  position: absolute;
+  top: 55%;
+  width: 93%;
+  height: 34%;
 }
 
 .main__shows-detailsHeading {
@@ -164,8 +167,18 @@ header {
   display: none;
 }
 
+.ticket__clicked {
+  background-color: #E1E1E1;
+}
+
 .ticket {
   padding: 16px;
+}
+.ticket__content:nth-child(2) {
+  font-family: avenir-demi;
+}
+.ticket:hover {
+  background-color: #FAFAFA;
 }
 .ticket__heading {
   color: #AFAFAF;
@@ -174,9 +187,6 @@ header {
 }
 .ticket__content {
   font-size: 17px;
-}
-.ticket__content--bold {
-  font-family: avenir-demi;
 }
 .ticket__button {
   background-color: #323232;
@@ -198,6 +208,11 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  iframe {
+    top: 57%;
+    width: 51%;
+    height: 23%;
+  }
   .main__shows-hero {
     height: 41.2rem;
   }
@@ -249,6 +264,20 @@ hr {
   }
 }
 @media only screen and (min-width: 1280px) {
+  iframe {
+    top: 34%;
+    width: 31%;
+    left: 60%;
+    height: 23%;
+  }
+  .overlay__heroHeading {
+    top: 21%;
+    left: 10%;
+  }
+  .main__shows-hero .overlay__heroPara {
+    top: 30%;
+    left: 10%;
+  }
   .main__shows-details {
     display: flex;
     justify-content: space-between;

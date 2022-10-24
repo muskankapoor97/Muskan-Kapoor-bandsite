@@ -83,6 +83,8 @@ let comments = [
     let userComment = {};
     userComment.name = event.target.name.value;
     userComment.comment =event.target.textarea.value;
+
+
     let divider = document.createElement("hr");
     commentsContainer.appendChild(divider);
 
@@ -104,7 +106,9 @@ let comment = document.createElement("div");
  let headerContainer = document.createElement("div");
  headerContainer.classList.add("comment__heading");
  comment.appendChild(headerContainer);
-   //name
+
+
+//name
 let commentName = document.createElement("h3");
 commentName.classList.add("comment__name");
 commentName.innerText = userComment.name;
@@ -112,9 +116,9 @@ headerContainer.appendChild(commentName);
 
 //date
 let currentDate = new Date();
-let date = String(today.getDate()).padStart(2, "0");
-let month = String(today.getMonth() + 1).padStart(2, "0");
-let year = today.getFullYear();
+let date = String(currentDate.getDate()).padStart(2, "0");
+let month = String(currentDate.getMonth() + 1).padStart(2, "0");
+let year = currentDate.getFullYear();
 
 currentDate= month + "/" + date + "/" + year;
 
@@ -130,10 +134,11 @@ headerContainer.appendChild(commentDate);
 let commentContent = document.createElement("p");
 commentContent.classList.add("comment__content");
 commentContent.innerText = userComment.comment;
-comment.appendChild(comment);
+comment.appendChild(commentContent);
 
 
 
-document.querySelector(".comment__form").reset();
+let commentForm=document.querySelector(".comment__form");
+commentForm.reset();
 });
     

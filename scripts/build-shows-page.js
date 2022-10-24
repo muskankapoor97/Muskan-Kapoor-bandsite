@@ -116,3 +116,9 @@ function makingtickets(arr){
 }
 
 makingtickets(concertList);
+let ticketEl=document.querySelector(".ticket")
+ticketEl.addEventListener("click",() => {
+    // ticketEl.style.backgroundColor="red";
+ticketEl.classList.toggle("ticket__clicked");
+});
+

@@ -22,7 +22,8 @@
         font-family: Avenir-demi;
     }
     &__image-container{
-        background:url(../../../assets/images/Mohan-muruge.jpg);
+        background:url(../assets/images/Mohan-muruge.jpg);
+        background-size: cover;
         border-radius: 50%;
         width: 48px;
         max-height: 48px;
@@ -178,9 +179,9 @@ hr{
 }
 @include breakpoint.large{
     .comments{
-        padding:0 10rem;
+        padding:0 31rem;
         &__wrapper{
-            padding:0 24rem;
+            padding:-1 24rem;
         }
         &__form{
             width:87%;

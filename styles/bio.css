@@ -3,25 +3,25 @@
 /*media query for desktop */
 @font-face {
   font-family: "Avenir-regular";
-  src: url("../Assets/Font/AvenirNextLTPro-Regular.otf") format("truetype");
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir-regular";
-  src: url("../Assets/Font/AvenirNextLTPro-Regular.otf") format("truetype");
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir-demi";
-  src: url("../Assets/Font/AvenirNextLTPro-Demi.otf") format("truetype");
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.otf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir-bold";
-  src: url("../Assets/Font/AvenirNextLTPro-Bold.otf") format("truetype");
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.otf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -32,14 +32,14 @@ header {
 .navbar {
   color: #E1E1E1;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 45px;
   width: 100vw;
   font-family: Avenir-regular;
 }
 .navbar__logo {
   max-height: 20px;
   max-width: 120px;
-  padding: 2%;
+  padding: 3% 0;
 }
 .navbar__list {
   list-style-type: none;
@@ -70,7 +70,7 @@ header {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   padding-top: 24px;
   padding-left: 0%;
 }
@@ -109,12 +109,12 @@ header {
   }
 }
 .hero {
-  background-image: url(../Assets/Images/hero-bio.jpg);
+  background-image: url(../assets/images/hero-bio.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 15.2rem;
+  height: 16.2rem;
   position: relative;
   margin: 0;
 }
@@ -124,13 +124,15 @@ header {
   height: 100%;
   width: 100%;
   padding: 0 16px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(50, 50, 50, 0.4);
 }
 
 .hero__title {
   position: absolute;
-  top: 45%;
+  top: 40%;
   color: #FFFFFF;
+  font-size: 32px;
+  font-family: avenir-demi;
 }
 
 .hero__title, .band__title, .band__quote, .band__name, .gallery__heading, .gallery__list {
@@ -227,7 +229,7 @@ header {
     line-height: 44px;
   }
   .band__image {
-    height: 33vh;
+    height: 38vh;
     padding-bottom: 36px;
   }
   .band__wrapper {
@@ -289,6 +291,183 @@ header {
   }
   .band__image {
     height: 48vh;
+  }
+}
+.comment__content, .comments__heading, .comment__name, .comment__date {
+  margin: 0;
+}
+
+.form__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comments {
+  padding: 0 16px;
+}
+.comments__heading {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  font-size: 32px;
+  line-height: 32px;
+  font-family: Avenir-demi;
+}
+.comments__image-container {
+  background: url(../assets/images/Mohan-muruge.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 48px;
+  max-height: 48px;
+  margin-top: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.comments__container {
+  font-size: 17px;
+  line-height: 23px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.comments__form {
+  width: 82%;
+}
+.comments__form-inputContainer {
+  padding-bottom: 16px;
+}
+.comments__form-label {
+  padding-bottom: 4px;
+  font-size: 14px;
+  font-family: avenir-demi;
+}
+.comments__form-nameInput, .comments__form-textareaInput {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #E1E1E1;
+  background-color: #f9f9f9;
+}
+.comments__form-nameInput {
+  height: 52px;
+}
+.comments__form-textareaInput {
+  height: 8rem;
+}
+.comments__form-submit {
+  background-color: #323232;
+  color: #FFFFFF;
+  height: 52px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: avenir-demi;
+}
+.comments__form-submit:hover {
+  background-color: #000000;
+}
+
+.comment {
+  max-width: 82%;
+}
+.comment__container {
+  display: flex;
+  justify-content: space-between;
+}
+.comment__image-container {
+  background-color: #E1E1E1;
+  border-radius: 50%;
+  width: 48px;
+  max-height: 48px;
+  margin-top: 1rem;
+}
+.comment__heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  font-size: 1rem;
+}
+.comment__name {
+  font-family: avenir-demi;
+}
+.comment__content {
+  color: #000000;
+}
+
+.comment__date, label {
+  color: #AFAFAF;
+}
+
+hr {
+  border: 1px solid #E1E1E1;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments {
+    padding: 0 36px;
+  }
+  .comments__wrapper {
+    padding: 0 6rem;
+  }
+  .comments__heading {
+    font-size: 47px;
+    line-height: 44px;
+    padding-top: 48px;
+    padding-bottom: 36px;
+  }
+  .comments__image-container {
+    width: 62px;
+    max-height: 62px;
+  }
+  .comments__form {
+    width: 90%;
+  }
+  .comments__container {
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 2.5rem;
+  }
+  .comments__form-label {
+    font-size: 16px;
+  }
+  .comments__form-nameInput, .comments__form-textareaInput {
+    padding: 16px;
+    border: 2px solid #E1E1E1;
+  }
+  .comments__form-inputContainer {
+    padding-bottom: 30px;
+  }
+  .comments__form-submit {
+    max-width: 29%;
+    margin-left: 31rem;
+  }
+  .comment {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 90%;
+  }
+  .comment__image-container {
+    width: 62px;
+    max-height: 62px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .comments {
+    padding: 0 31rem;
+  }
+  .comments__wrapper {
+    padding: -1 24rem;
+  }
+  .comments__form {
+    width: 87%;
+  }
+  .comments__form-submit {
+    max-width: 40%;
+    margin-left: 19rem;
+  }
+  .comment {
+    max-width: 87%;
+    padding-top: 0;
   }
 }
 .footer {

@@ -1,0 +1,200 @@
+@use "../breakpoints" as breakpoint;
+@use "../colors" as *;
+@use "../fonts" as *;
+
+
+.overlay__heroPara p,.overlay__heroHeading,hr{
+   margin: 0;
+}
+.main__shows-hero{
+   background-image: url(../assets/images/hero-shows.jpg);
+   background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 23.2rem;
+    position:relative;
+    margin: 0; 
+}
+.overlay__heroHeading,.overlay__heroPara{
+   position:absolute;
+   color: $white;
+}
+.overlay{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   padding:0 16px;
+ background: rgba(50, 50, 50, 0.40);
+
+   &__heroHeading{
+   top:12%;
+   font-size: 1.2rem;
+   }
+   &__heroPara{
+   top:26%;
+   font-size: 2rem;
+   font-family: avenir-demi;
+   }
+   
+}
+iframe{
+   position: absolute;
+   top: 55%;
+   width: 93%;
+   height: 34%;
+}
+// .main__shows-details{
+//    padding: 0 16px;
+// }
+.main__shows-detailsHeading{
+   margin-bottom: 0;
+   
+   padding: 24px 16px 0px;
+   font-size: 32px;
+    line-height: 32px;
+    font-family: Avenir-demi;
+}
+.tickets{
+   margin-bottom:16px;
+   &__headings-tablet{
+      display:none;
+   }
+}
+.ticket__clicked{
+   background-color: $mercury;
+
+}
+.ticket{
+   padding:16px;
+   &__content:nth-child(2){
+      font-family: avenir-demi;
+      }
+   &:hover{
+      background-color: $alabaster;
+   }
+   
+   
+
+   &__heading{
+   color:$silver;
+   font-size:0.8rem;
+   display:block;
+   }
+   &__content{
+      font-size: 17px;
+      }
+   
+   &__button{
+   background-color: $black;
+   color: $white;
+   height: 52px;
+   width: 100%;
+   border:none;
+   border-radius: 4px;
+   font-size: 20px;
+   line-height: 20px;
+   font-family: avenir-demi;
+   }
+   &__button:hover{
+      background-color: $darkblack;
+   }
+}
+hr{
+   border: 1px solid $mercury;
+}
+
+@include breakpoint.medium{
+   iframe{
+      top: 57%;
+      width: 51%;
+      height: 23%;
+   }
+   .main__shows-hero{
+      height:41.2rem;
+    
+      
+   
+   .overlay{
+      &__heroHeading{
+         font-size:2rem;
+         font-family: avenir-demi;
+      }
+      &__heroPara{
+         top:20%;
+         font-size: 5rem;
+      }
+      }
+   }
+
+
+.overlay,.main__shows-details{
+   padding:0 36px;
+}
+.main__shows-detailsHeading{
+   margin-top:2.5rem;
+   padding-top: 48px;
+   padding-bottom: 36px;
+   font-size: 3rem;
+}
+.tickets{
+   margin:1.7rem 0;
+   &__headings-tablet{
+      display:flex;
+      justify-content: space-between;
+      color:$silver;
+      width:76%;
+      padding-left: 13px;
+      font-size: 14px;
+      font-family: avenir-demi;
+   }
+   &__heading-tablet{
+   
+      width:60%;
+   }
+}
+
+.ticket{
+   display: flex;
+   justify-content: space-between;
+   &__heading{
+      display:none;
+   }
+   &__content{
+      width:20%;
+      font-size: 18px;
+   }
+   &__button{
+      width:23%;
+   }
+}
+}
+@include breakpoint.large{
+   iframe{
+      top: 34%;
+      width: 31%;
+      left: 60%;
+      height: 23%;
+   }
+   .overlay__heroHeading {
+      top: 21%;
+      left: 10%;
+   }
+   .main__shows-hero .overlay__heroPara {
+      top: 30%;
+      left: 10%;
+   }
+   .main__shows-details{
+      display:flex;
+      justify-content: space-between;
+      padding:0 120px;
+   }
+   .tickets{
+      width:70%;
+   }
+}
+
+
+
+   
+

@@ -12,11 +12,12 @@
         <nav class="navbar">
            
             <div class="navbar__logo">
-                <img src="./Assets/Logo/Logo-bandsite.svg" alt="bandsite logo" class="navbar__logo-image"/>
+                <img src="./assets/logos/Logo-bandsite.svg" alt="bandsite logo" class="navbar__logo-image"/>
             </div>
             <ul class="navbar__list">
-                <li class="navbar__list-item navbar__list-item--active">Biography</li>
-                <li class="navbar__list-item">Shows</li>
+                <li class="navbar__list-item navbar__list-item--active">
+                    <a href="./index.html">Biography</a></li>
+                <li class="navbar__list-item"><a href="./pages/shows.html">Shows</a></li>
             </ul>
             
         </nav>
@@ -30,7 +31,7 @@
         <section class="band">
             <h2 class="band__title">About the Musicians</h2>
             <div class="band__wrapper">
-            <img src="./Assets/Images/band.jpg" class="band__image"/>
+            <img src="./assets/images/band.jpg" class="band__image"/>
             <p class="band__quote">"We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'”</p>
             <p class="band__quote band__quote--regular"> - Bryan Teddy, lead vocalist of The Bees Knees</p>
                 
@@ -50,33 +51,106 @@
         <article class="gallery">
             <h2 class="gallery__heading">Photo Gallery</h2>
             <ul class="gallery__list">
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-1.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-2.jpg" class="gallery__image" /></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-3.jpg" class="gallery__image" /></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-4.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-5.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-6.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-7.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-8.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./Assets/Images/Photo-gallery-9.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-1.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-2.jpg" class="gallery__image" /></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-3.jpg" class="gallery__image" /></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-4.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-5.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-6.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-7.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-8.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-9.jpg" class="gallery__image"/></li>
             </ul>
         </article>
+
+        <section class="comments">
+            <h2 class="comments__heading">Join the Conversation</h2>
+            <div class="comments__wrapper">
+            <div class="form__wrapper">
+            <div class="comments__image-container">
+            
+            </div>
+            <form class="comments__form" id="commentsForm">
+                <div class="comments__form-inputContainer">
+                <label for="name" class="comments__form-label">NAME</label><br>
+                <input id="name" type="text" name="name" placeholder="Enter your name" class="comments__form-nameInput" required></div>
+                <div class="comments__form-inputContainer">
+                <label for="comment" class="comments__form-label">COMMENT</label><br>
+                <input id="comment" type="textarea" name="textarea" placeholder="Add a new comment" class="comments__form-textareaInput" required></div>
+                <div class="comments__form-inputContainer">
+                <button type="submit" class="comments__form-submit">COMMENT</button></div>
+
+                
+            </form>
+            </div>
+            <!-- <div class="comments__container">
+                <hr>
+                <div class="comment__container">
+                <div class="comment__image-container"></div>
+                <div class="comment">
+                    <div class="comment__heading">
+                   <h3 class="comment__name">Connor Walton</h3>
+                   <p class="comment__date">02/17/2021</p> 
+                </div>
+                
+                <p class="comment__content">This is art. This is inexplicable magic 
+                    expressed in the purest way, everything 
+                    that makes up this majestic work 
+                    deserves reverence. Let us appreciate 
+                    this for what it is and what it contains.</p>
+                </div></div>
+                
+                <hr>
+                <div class="comment__container">
+                    <div class="comment__image-container"></div>
+                    <div class="comment">
+                    <div class="comment__heading">
+                        <h3 class="comment__name">Emilie Beach</h3>
+                        <p class="comment__date">01/09/2021</p> 
+                    </div>
+                    <p class="comment__content">I feel blessed to have seen them in 
+                    person. What a show! They were just 
+                    perfection. If there was one day of my 
+                    life I could relive, this would be it. What 
+                    an incredible day</p>
+                </div></div>
+
+                <hr>
+                <div class="comment__container">
+                    <div class="comment__image-container"></div>
+                    <div class="comment">
+                    <div class="comment__heading">
+                        <h3 class="comment__name">Miles Acosta</h3>
+                        <p class="comment__date">12/20/2020</p> 
+                    </div>
+                    <p class="comment__content">I can t stop listening. Every time I hear 
+                        one of their songs the vocals it gives 
+                        me goosebumps. Shivers straight down 
+                        my spine. What a beautiful expression of 
+                        creativity. Can t get enough. 
+                    </p>
+                </div></div>
+                <hr>
+
+            </div> -->
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__top">
         <h2 class="footer__heading">Get In Touch</h2>
         <div class="footer__icons">
             <a href="https://www.facebook.com/" target="_blank">
-            <img src="./Assets/Icons/SVG/Icon-instagram.svg" class="icon"/>
+            <img src="./assets/icons/SVG/Icon-instagram.svg" class="icon"/>
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-            <img src="./Assets/Icons/SVG/Icon-facebook.svg"class="icon"/>
+            <img src="./assets/icons/SVG/Icon-facebook.svg"class="icon"/>
             </a>
             <a href="https://www.twitter.com/"target="_blank">
-            <img src="./Assets/Icons/SVG/Icon-twitter.svg"class="icon"/>
+            <img src="./assets/icons/SVG/Icon-twitter.svg"class="icon"/>
             </a>
         </div>
-        <img src="./Assets/Logo/Logo-bandsite.svg" class="footer__logo-top" alt="bandsite__logo"/>
+        <img src="./assets/logos/Logo-bandsite.svg" class="footer__logo-top" alt="bandsite__logo"/>
         </div>
         <div class="contact">
         <ul class="contact__container">
@@ -99,11 +173,12 @@
         </ul>
         </div>
         <div class="footer__bottom">
-            <img src="./Assets/Logo/Logo-bandsite.svg" class="footer__logo-bottom" alt="bandsite__logo"/>
+            <img src="./assets/logos/Logo-bandsite.svg" class="footer__logo-bottom" alt="bandsite__logo"/>
        
         <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
         </div>
 
     </footer>
+    <script src="./scripts/index-page.js"></script>
 </body>
 </html>

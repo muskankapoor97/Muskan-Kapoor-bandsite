@@ -22,7 +22,7 @@
 .hero__title{
     position:absolute;
     top:40%;
-    color: $white;
+    color: $color-primary-accent;
     font-size: 32px;
     font-family: avenir-demi;
 }
@@ -30,7 +30,7 @@
     margin:0;
 }
 .band__description,.__band__quote{
-    color: $black;
+    color: $color-primary-dark;
 }
 
 .band__image{
@@ -38,7 +38,7 @@
     width: 100%;
 }
 .gallery{
-    background-color: $alabaster;
+    background-color: $color-secondary-accent;
     
     &__image{
         width: 100%;
@@ -79,7 +79,7 @@
         &__name{
             padding-top: 24px;
             padding-bottom: 16px;
-            color: $darkblack;
+            color: $color-secondary-dark;
            
         }
         &__description{

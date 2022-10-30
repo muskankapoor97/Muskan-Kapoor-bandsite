@@ -21,6 +21,11 @@ let comments = [
   let commentsContainer = document.createElement("div");
   commentsContainer.classList.add("comments__container");
   commentsSection.appendChild(commentsContainer);
+
+  let divider = document.createElement("hr");
+  commentsContainer.appendChild(divider);
+
+  
   
   
   
@@ -30,8 +35,7 @@ let comments = [
   
     for (let i = 0; i < arr.length; i++) {
       
-    let divider = document.createElement("hr");
-    commentsContainer.appendChild(divider);
+    
  
      
      let commentContainer = document.createElement("div");
@@ -68,7 +72,10 @@ let comments = [
       commentContent.classList.add("comment__content");
   commentContent.innerText=arr[i]["comment"]
       comment.appendChild(commentContent);
-  
+
+      let divider = document.createElement("hr");
+    commentsContainer.appendChild(divider);
+      
     
     }
   }
@@ -85,13 +92,15 @@ let comments = [
     userComment.comment =event.target.textarea.value;
 
 
-    let divider = document.createElement("hr");
-    commentsContainer.appendChild(divider);
+    
 
  
  let commentContainer = document.createElement("div");
  commentContainer.classList.add("comment__container");
- commentsContainer.appendChild(commentContainer);
+ commentsContainer.prepend(commentContainer);
+
+ let divider = document.createElement("hr");
+    commentsContainer.prepend(divider);
 
  //image container
  let imageContainer = document.createElement("div");
@@ -135,6 +144,8 @@ let commentContent = document.createElement("p");
 commentContent.classList.add("comment__content");
 commentContent.innerText = userComment.comment;
 comment.appendChild(commentContent);
+
+
 
 
 

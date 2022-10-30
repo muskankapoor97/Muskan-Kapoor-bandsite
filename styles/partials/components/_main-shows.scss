@@ -18,7 +18,7 @@
 }
 .overlay__heroHeading,.overlay__heroPara{
    position:absolute;
-   color: $white;
+   color: $color-primary-accent;
 }
 .overlay{
    position: absolute;
@@ -62,22 +62,21 @@ iframe{
    }
 }
 .ticket__clicked{
-   background-color: $mercury;
+   background-color: $color-secondary-light;
+   
 
 }
 .ticket{
    padding:16px;
-   &__content:nth-child(2){
+   &__content:nth-child(2){ 
       font-family: avenir-demi;
       }
-   &:hover{
-      background-color: $alabaster;
+   
+   &:not(.ticket__clicked):hover{
+      background-color: $color-secondary-accent;
    }
-   
-   
-
    &__heading{
-   color:$silver;
+   color:$color-primary-light;
    font-size:0.8rem;
    display:block;
    }
@@ -86,8 +85,8 @@ iframe{
       }
    
    &__button{
-   background-color: $black;
-   color: $white;
+   background-color: $color-primary-dark;
+   color: $color-primary-accent;
    height: 52px;
    width: 100%;
    border:none;
@@ -97,11 +96,11 @@ iframe{
    font-family: avenir-demi;
    }
    &__button:hover{
-      background-color: $darkblack;
+      background-color: $color-secondary-dark;
    }
 }
 hr{
-   border: 1px solid $mercury;
+   border: 1px solid $color-secondary-light;
 }
 
 @include breakpoint.medium{
@@ -142,7 +141,7 @@ hr{
    &__headings-tablet{
       display:flex;
       justify-content: space-between;
-      color:$silver;
+      color:$color-primary-light;
       width:76%;
       padding-left: 13px;
       font-size: 14px;

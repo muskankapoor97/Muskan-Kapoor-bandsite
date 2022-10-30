@@ -2,13 +2,13 @@
 @use "../colors" as *;
 @use "../fonts" as *;
 .footer{
-    background-color:$black;
-    color:$mercury;
+    background-color:$color-primary-dark;
+    color:$color-secondary-light;
     
 }
 a{
     text-decoration: none;
-    color:$mercury;
+    color:$color-secondary-light;
 }
 .footer__heading,.contact__container{
     margin:0;
@@ -25,7 +25,7 @@ a{
             font-size: 32px;
             line-height: 32px;
             font-family: Avenir-demi;
-            color: $white;
+            color: $color-primary-accent;
             }
         
         &__icons{

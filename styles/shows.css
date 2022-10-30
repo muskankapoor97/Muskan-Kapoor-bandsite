@@ -177,7 +177,7 @@ iframe {
 .ticket__content:nth-child(2) {
   font-family: avenir-demi;
 }
-.ticket:hover {
+.ticket:not(.ticket__clicked):hover {
   background-color: #FAFAFA;
 }
 .ticket__heading {

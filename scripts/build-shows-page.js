@@ -116,9 +116,10 @@ function makingtickets(arr){
 }
 
 makingtickets(concertList);
-let ticketEl=document.querySelector(".ticket")
-ticketEl.addEventListener("click",() => {
-    // ticketEl.style.backgroundColor="red";
+let ticketsEl=document.querySelectorAll(".ticket")
+ticketsEl.forEach(function(ticketEl){
+    ticketEl.addEventListener("click",() => {
 ticketEl.classList.toggle("ticket__clicked");
-});
 
+});
+});

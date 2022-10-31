@@ -13,20 +13,21 @@
 
 
 .comments{
-    padding:0 16px;
+    color:$color-primary-dark;
+    padding:0 1rem;
     &__heading{
         padding-top:24px;
-        padding-bottom: 16px;
-        font-size: 32px;
-        line-height: 32px;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 2rem;
         font-family: Avenir-demi;
     }
     &__image-container{
         background:url(../assets/images/Mohan-muruge.jpg);
         background-size: cover;
         border-radius: 50%;
-        width: 48px;
-        max-height: 48px;
+        width: 3rem;
+        max-height: 3rem;
         margin-top: 1rem;
         object-fit: contain;
         
@@ -40,7 +41,7 @@
     &__form{
         width: 82%;
         &-inputContainer{
-            padding-bottom: 16px;
+            padding-bottom: 1rem;
         }
         &-label{
             padding-bottom: 4px;
@@ -81,6 +82,7 @@
     
 
 .comment{
+    min-width: 87%;
    max-width: 82%;
     &__container{
         display:flex;
@@ -93,15 +95,15 @@
         background-color: $color-secondary-light;
         border-radius: 50%;
         
-        width: 48px;
-        max-height: 48px;
+        width: 3rem;
+        max-height: 3rem;
         margin-top: 1rem;
        
     }
     &__heading{
         display: flex;
         justify-content: space-between;
-        padding:16px 0;
+        padding:1rem 0;
         font-size: 1rem;
     }
     
@@ -129,7 +131,7 @@ hr{
         &__heading{
             font-size: 47px;
             line-height: 44px;
-            padding-top: 48px;
+            padding-top: 3rem;
             padding-bottom: 36px;
         }
         &__image-container{
@@ -137,12 +139,12 @@ hr{
             max-height:62px;
         }
         &__form{
-            width:90%
+            width:87%
         }
         &__container{
             font-size: 19px;
             line-height: 27px;
-            margin-bottom: 2.5rem;
+            margin:0 6rem 2.5rem 6rem;
             
         }
         &__form{
@@ -160,14 +162,14 @@ hr{
         
         &-submit{
             max-width: 29%;
-            margin-left:31rem;
+            
         }
     }
 }
     .comment{
-        padding-top:1.5rem;
-        padding-bottom: 1.5rem;
-        max-width:90%;
+        padding-top:0.3rem;
+        padding-bottom: 0.3rem;
+        min-width: 86%;
         &__image-container{
             width:62px;
             max-height:62px;
@@ -175,24 +177,29 @@ hr{
        
         
     }
+    .button__wrapper{
+        display: flex;
+        justify-content: flex-end;
+    }
 
 }
 @include breakpoint.large{
     .comments{
-        padding:0 31rem;
+        margin:0 14rem;
         &__wrapper{
-            padding:-1 24rem;
+            padding:0 5rem;
         }
         &__form{
             width:87%;
             &-submit{
                 max-width: 40%;
-                margin-left:19rem;
+                
             }
         }
     }
     .comment{
-        max-width: 87%;
+        
+        max-width: 86%;
         padding-top: 0;
     }
 }

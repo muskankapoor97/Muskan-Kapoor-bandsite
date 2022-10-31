@@ -29,10 +29,16 @@ header{
             margin: 0;
          
         }
+        &__list-item:not(.list-item--active):hover{
+            color: $color-primary-accent;
+            border-bottom: 3px solid $color-primary-accent;
+        }
+        
         &__list-item--active{
             color: $color-primary-accent;
-        font-weight: bold;
+       font-family: Avenir-demi;
         border-bottom: 3px solid $color-primary-accent;
+
            }
 }
 

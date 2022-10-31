@@ -22,8 +22,8 @@ a{
            
             padding-top: 24px;
             padding-bottom: 16px;
-            font-size: 32px;
-            line-height: 32px;
+            font-size: 2rem;
+            line-height: 2rem;
             font-family: Avenir-demi;
             color: $color-primary-accent;
             }
@@ -57,7 +57,7 @@ a{
     .contact{
 
         &__container,&__container-item{
-            padding-top: 16px;
+            padding-top: 1rem;
             padding-left: 0px;
             font-size: 17px;
             line-height: 25px; 
@@ -72,14 +72,21 @@ a{
      padding:0 36px;
  
      &__heading{
-        padding-top: 48px;
+        padding-top: 3rem;
         padding-bottom: 36px;
         font-size: 47px;
         line-height: 44px; 
+        min-width: 17rem;
+        margin-right: 1rem;
      }
      &__icons{
-        display: flex;
+        padding-top: 3rem;
+        padding-bottom: 36px;
         align-items: center;
+        display: inline;
+        min-width: 16em;
+        
+       
      }
      
      &__bottom{
@@ -87,14 +94,15 @@ a{
      }
      &__top{
          display: flex;
+         justify-content: space-between;
          
  
      }
      &__logo-top{
         display: block;
         height: 1.5em;
-        margin-top: 48px;
-        margin-left: 17rem;
+        margin-top: 3rem;
+        margin-left: 8.5rem;
          
      }
      
@@ -106,27 +114,95 @@ a{
         font-size: 17px;
      }
  }
- .icon{
-    padding-left:2.7em;
- }
+ 
+ 
  .contact{
      display: flex;
-     &__container{
-        margin-right: 5em;
-     }
+     justify-content: space-between;
+     min-width: 70%;
      &__container,&__container-item{
         padding-top: 36px;
+        
     }
     &__container-item--bold{
         padding-top: 0%;
+        width: 16rem;
+        
     }
     } 
  }
+ .icon{
+    margin-right:1rem;
+    
+}
  @include breakpoint.large{
     .footer{
         padding: 0 10rem;
         &__logo-top{
             margin-left: 24rem;
         }
+        &__heading{
+            padding-top: 3rem;
+            padding-bottom: 36px;
+            font-size: 47px;
+            line-height: 44px; 
+            min-width: 17rem;
+            margin-right: 1rem;
+         }
+        &__icons{
+        padding-top: 3rem;
+        padding-bottom: 36px;
+        align-items: center;
+        display: inline;
+        min-width: 16em;
+        }
+        &__top{
+            display: flex;
+            justify-content: space-between;
+            
+    
+        }
+        &__bottom{
+            padding-top: 36px;
+         }
+         &__top{
+             display: flex;
+             justify-content: space-between;
+             
+     
+         }
+         &__logo-top{
+            display: block;
+            height: 1.5em;
+            margin-top: 3rem;
+            margin-left: 8.5rem;
+             
+         }
+         
+         &__logo-bottom{
+             display:none;
+     
+         }
+         &__copyright{
+            font-size: 17px;
+         }
     }
+    .icon{
+        margin-right:1rem;
+        
+    }
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        min-width: 70%;
+        &__container,&__container-item{
+           padding-top: 36px;
+           
+       }
+       &__container-item--bold{
+           padding-top: 0%;
+           width: 16rem;
+           
+       }
+       } 
  }

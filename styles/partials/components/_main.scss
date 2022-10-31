@@ -1,6 +1,13 @@
 @use "../breakpoints" as breakpoint;
 @use "../colors" as *;
 @use "../fonts" as *;
+
+.band,.gallery{
+    color:$color-primary-dark;
+}
+
+
+
 .hero{
     background-image:url(../assets/images/hero-bio.jpg);;
     background-position:bottom;
@@ -15,22 +22,22 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    padding:0 16px;
+    padding:0 1rem;
   background: rgba(50, 50, 50, 0.40);
 }
 
 .hero__title{
     position:absolute;
     top:40%;
-    color: $white;
-    font-size: 32px;
+    color: $color-primary-accent;
+    font-size: 2rem;
     font-family: avenir-demi;
 }
 .hero__title,.band__title,.band__quote,.band__name,.gallery__heading,.gallery__list{
     margin:0;
 }
 .band__description,.__band__quote{
-    color: $black;
+    color: $color-primary-dark;
 }
 
 .band__image{
@@ -38,7 +45,7 @@
     width: 100%;
 }
 .gallery{
-    background-color: $alabaster;
+    background-color: $color-secondary-accent;
     
     &__image{
         width: 100%;
@@ -48,17 +55,17 @@
 }
 // @include breakpoint.small{
     .band{
-        padding: 0 16px;
+        padding: 0 1rem;
     
     &__title{
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 2rem;
+        line-height: 2rem;
         font-family: Avenir-demi;
         
     }
     .hero__title{
         font-size: 32px;
-        line-height: 32px;
+        line-height: 2rem;
         font-family: Avenir-demi;
         
     }
@@ -67,7 +74,7 @@
         margin: 0;
         &__title{
             padding-top: 24px;
-            padding-bottom: 16px;
+            padding-bottom: 1rem;
         }
         &__quote{
             font-size: 18px;
@@ -78,8 +85,8 @@
         }
         &__name{
             padding-top: 24px;
-            padding-bottom: 16px;
-            color: $darkblack;
+            padding-bottom: 1rem;
+            color: $color-secondary-dark;
            
         }
         &__description{
@@ -100,9 +107,9 @@
         }
         &__heading{
             padding-top: 24px;
-            padding-bottom: 16px;
-            font-size: 32px;
-            line-height: 32px;
+            padding-bottom: 1rem;
+            font-size: 2rem;
+            line-height: 2rem;
             font-family: Avenir-demi;
         }
         &__image{
@@ -144,7 +151,7 @@
         line-height: 22px;
     }
     &__name{
-        padding-top: 48px;
+        padding-top: 3rem;
         padding-bottom: 36px;
         font-size: 31px;
         font-family: Avenir-demi;
@@ -160,27 +167,27 @@
     }
 }
 .band__title,.gallery__heading{
-        padding-top: 48px;
+        padding-top: 3rem;
         padding-bottom: 36px;
         font-size: 47px;
         line-height: 44px; 
     }
 
 .gallery{
-    padding:0 36px;
+    padding:28px 36px;
   
 &__list{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     
     width: 100%;
    
 }
 &__list-item{
-    width: 30%;
-    margin: 0.8em;
+    width: 29.8%;
+    margin: 0.4em 1.4em 0.6em 0;
 }
 }
 
@@ -189,6 +196,9 @@
 @include breakpoint.large{
     .overlay,.band,.gallery{
         padding: 0 10rem;
+    }
+    .gallery{
+        padding:1rem 10rem;
     }
     .hero{
         height:46rem;

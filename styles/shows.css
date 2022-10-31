@@ -47,9 +47,13 @@ header {
   justify-content: space-between;
   margin: 0;
 }
+.navbar__list-item:not(.list-item--active):hover {
+  color: #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+}
 .navbar__list-item--active {
   color: #FFFFFF;
-  font-weight: bold;
+  font-family: Avenir-demi;
   border-bottom: 3px solid #FFFFFF;
 }
 
@@ -108,6 +112,10 @@ header {
     padding-top: 2%;
   }
 }
+.main__shows {
+  color: #323232;
+}
+
 .overlay__heroPara p, .overlay__heroHeading, hr {
   margin: 0;
 }
@@ -132,7 +140,7 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 1rem;
   background: rgba(50, 50, 50, 0.4);
 }
 .overlay__heroHeading {
@@ -148,20 +156,20 @@ header {
 iframe {
   position: absolute;
   top: 55%;
-  width: 93%;
+  width: 89%;
   height: 34%;
 }
 
 .main__shows-detailsHeading {
   margin-bottom: 0;
   padding: 24px 16px 0px;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   font-family: Avenir-demi;
 }
 
 .tickets {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .tickets__headings-tablet {
   display: none;
@@ -172,12 +180,12 @@ iframe {
 }
 
 .ticket {
-  padding: 16px;
+  padding: 1rem;
 }
 .ticket__content:nth-child(2) {
   font-family: avenir-demi;
 }
-.ticket:hover {
+.ticket:not(.ticket__clicked):hover {
   background-color: #FAFAFA;
 }
 .ticket__heading {
@@ -229,7 +237,7 @@ hr {
   }
   .main__shows-detailsHeading {
     margin-top: 2.5rem;
-    padding-top: 48px;
+    padding-top: 3rem;
     padding-bottom: 36px;
     font-size: 3rem;
   }
@@ -307,8 +315,8 @@ a {
 .footer__heading {
   padding-top: 24px;
   padding-bottom: 16px;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   font-family: Avenir-demi;
   color: #FFFFFF;
 }
@@ -337,7 +345,7 @@ a {
 }
 
 .contact__container, .contact__container-item {
-  padding-top: 16px;
+  padding-top: 1rem;
   padding-left: 0px;
   font-size: 17px;
   line-height: 25px;
@@ -351,26 +359,94 @@ a {
     padding: 0 36px;
   }
   .footer__heading {
-    padding-top: 48px;
+    padding-top: 3rem;
     padding-bottom: 36px;
     font-size: 47px;
     line-height: 44px;
+    min-width: 17rem;
+    margin-right: 1rem;
   }
   .footer__icons {
-    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 36px;
     align-items: center;
+    display: inline;
+    min-width: 16em;
   }
   .footer__bottom {
     padding-top: 36px;
   }
   .footer__top {
     display: flex;
+    justify-content: space-between;
   }
   .footer__logo-top {
     display: block;
     height: 1.5em;
-    margin-top: 48px;
-    margin-left: 17rem;
+    margin-top: 3rem;
+    margin-left: 8.5rem;
+  }
+  .footer__logo-bottom {
+    display: none;
+  }
+  .footer__copyright {
+    font-size: 17px;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    min-width: 70%;
+  }
+  .contact__container, .contact__container-item {
+    padding-top: 36px;
+  }
+  .contact__container-item--bold {
+    padding-top: 0%;
+    width: 16rem;
+  }
+}
+.icon {
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 0 10rem;
+  }
+  .footer__logo-top {
+    margin-left: 24rem;
+  }
+  .footer__heading {
+    padding-top: 3rem;
+    padding-bottom: 36px;
+    font-size: 47px;
+    line-height: 44px;
+    min-width: 17rem;
+    margin-right: 1rem;
+  }
+  .footer__icons {
+    padding-top: 3rem;
+    padding-bottom: 36px;
+    align-items: center;
+    display: inline;
+    min-width: 16em;
+  }
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__bottom {
+    padding-top: 36px;
+  }
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__logo-top {
+    display: block;
+    height: 1.5em;
+    margin-top: 3rem;
+    margin-left: 8.5rem;
   }
   .footer__logo-bottom {
     display: none;
@@ -379,27 +455,19 @@ a {
     font-size: 17px;
   }
   .icon {
-    padding-left: 2.7em;
+    margin-right: 1rem;
   }
   .contact {
     display: flex;
-  }
-  .contact__container {
-    margin-right: 5em;
+    justify-content: space-between;
+    min-width: 70%;
   }
   .contact__container, .contact__container-item {
     padding-top: 36px;
   }
   .contact__container-item--bold {
     padding-top: 0%;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .footer {
-    padding: 0 10rem;
-  }
-  .footer__logo-top {
-    margin-left: 24rem;
+    width: 16rem;
   }
 }
 html, body {

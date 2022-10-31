@@ -31,7 +31,7 @@
         <section class="band">
             <h2 class="band__title">About the Musicians</h2>
             <div class="band__wrapper">
-            <img src="./assets/images/band.jpg" class="band__image"/>
+            <img src="./assets/images/band.jpg" class="band__image" alt="Concert image of The Bees Knees"/>
             <p class="band__quote">"We push each other to be the best. It's not uncommon for one of us to say 'this needs to be better, back to the drawing board'”</p>
             <p class="band__quote band__quote--regular"> - Bryan Teddy, lead vocalist of The Bees Knees</p>
                 
@@ -51,15 +51,15 @@
         <article class="gallery">
             <h2 class="gallery__heading">Photo Gallery</h2>
             <ul class="gallery__list">
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-1.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-2.jpg" class="gallery__image" /></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-3.jpg" class="gallery__image" /></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-4.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-5.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-6.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-7.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-8.jpg" class="gallery__image"/></li>
-                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-9.jpg" class="gallery__image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-1.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-2.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-3.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-4.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-5.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-6.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-7.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-8.jpg" class="gallery__image" alt="concert image"/></li>
+                <li class="gallery__list-item"><img src="./assets/images/Photo-gallery-9.jpg" class="gallery__image" alt="concert image"/></li>
             </ul>
         </article>
 
@@ -77,7 +77,7 @@
                 <div class="comments__form-inputContainer">
                 <label for="comment" class="comments__form-label">COMMENT</label><br>
                 <input id="comment" type="textarea" name="textarea" placeholder="Add a new comment" class="comments__form-textareaInput" required></div>
-                <div class="comments__form-inputContainer">
+                <div class="comments__form-inputContainer button__wrapper">
                 <button type="submit" class="comments__form-submit">COMMENT</button></div>
 
                 
@@ -138,16 +138,17 @@
     </main>
     <footer class="footer">
         <div class="footer__top">
+            
         <h2 class="footer__heading">Get In Touch</h2>
         <div class="footer__icons">
-            <a href="https://www.facebook.com/" target="_blank">
-            <img src="./assets/icons/SVG/Icon-instagram.svg" class="icon"/>
-            </a>
             <a href="https://www.instagram.com/" target="_blank">
-            <img src="./assets/icons/SVG/Icon-facebook.svg"class="icon"/>
+            <img src="./assets/icons/SVG/Icon-instagram.svg" class="icon" alt="instagram icon"/>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+            <img src="./assets/icons/SVG/Icon-facebook.svg"class="icon" alt="facebook icon"/>
             </a>
             <a href="https://www.twitter.com/"target="_blank">
-            <img src="./assets/icons/SVG/Icon-twitter.svg"class="icon"/>
+            <img src="./assets/icons/SVG/Icon-twitter.svg"class="icon" alt="twitter icon"/>
             </a>
         </div>
         <img src="./assets/logos/Logo-bandsite.svg" class="footer__logo-top" alt="bandsite__logo"/>
@@ -179,6 +180,7 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./scripts/index-page.js"></script>
 </body>
 </html>

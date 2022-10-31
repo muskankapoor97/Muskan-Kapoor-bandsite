@@ -2,7 +2,9 @@
 @use "../colors" as *;
 @use "../fonts" as *;
 
-
+.main__shows{
+   color:$color-primary-dark
+}
 .overlay__heroPara p,.overlay__heroHeading,hr{
    margin: 0;
 }
@@ -18,13 +20,13 @@
 }
 .overlay__heroHeading,.overlay__heroPara{
    position:absolute;
-   color: $white;
+   color: $color-primary-accent;
 }
 .overlay{
    position: absolute;
    height: 100%;
    width: 100%;
-   padding:0 16px;
+   padding:0 1rem;
  background: rgba(50, 50, 50, 0.40);
 
    &__heroHeading{
@@ -41,7 +43,7 @@
 iframe{
    position: absolute;
    top: 55%;
-   width: 93%;
+   width: 89%;
    height: 34%;
 }
 // .main__shows-details{
@@ -51,33 +53,32 @@ iframe{
    margin-bottom: 0;
    
    padding: 24px 16px 0px;
-   font-size: 32px;
-    line-height: 32px;
+   font-size: 2rem;
+    line-height: 2rem;
     font-family: Avenir-demi;
 }
 .tickets{
-   margin-bottom:16px;
+   margin-bottom:1rem;
    &__headings-tablet{
       display:none;
    }
 }
 .ticket__clicked{
-   background-color: $mercury;
+   background-color: $color-secondary-light;
+   
 
 }
 .ticket{
-   padding:16px;
-   &__content:nth-child(2){
+   padding:1rem;
+   &__content:nth-child(2){ 
       font-family: avenir-demi;
       }
-   &:hover{
-      background-color: $alabaster;
+   
+   &:not(.ticket__clicked):hover{
+      background-color: $color-secondary-accent;
    }
-   
-   
-
    &__heading{
-   color:$silver;
+   color:$color-primary-light;
    font-size:0.8rem;
    display:block;
    }
@@ -86,8 +87,8 @@ iframe{
       }
    
    &__button{
-   background-color: $black;
-   color: $white;
+   background-color: $color-primary-dark;
+   color: $color-primary-accent;
    height: 52px;
    width: 100%;
    border:none;
@@ -97,11 +98,11 @@ iframe{
    font-family: avenir-demi;
    }
    &__button:hover{
-      background-color: $darkblack;
+      background-color: $color-secondary-dark;
    }
 }
 hr{
-   border: 1px solid $mercury;
+   border: 1px solid $color-secondary-light;
 }
 
 @include breakpoint.medium{
@@ -133,7 +134,7 @@ hr{
 }
 .main__shows-detailsHeading{
    margin-top:2.5rem;
-   padding-top: 48px;
+   padding-top: 3rem;
    padding-bottom: 36px;
    font-size: 3rem;
 }
@@ -142,7 +143,7 @@ hr{
    &__headings-tablet{
       display:flex;
       justify-content: space-between;
-      color:$silver;
+      color:$color-primary-light;
       width:76%;
       padding-left: 13px;
       font-size: 14px;

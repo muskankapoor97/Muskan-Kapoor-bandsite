@@ -3,13 +3,13 @@
 @use "../fonts" as *;
 
 header{
-    background-color:$black;
+    background-color:$color-primary-dark;
 }
 
 
 .navbar{
     
-    color: $mercury;
+    color: $color-secondary-light;
     font-size: 24px;
     line-height: 45px;
     width: 100vw;
@@ -29,10 +29,16 @@ header{
             margin: 0;
          
         }
+        &__list-item:not(.list-item--active):hover{
+            color: $color-primary-accent;
+            border-bottom: 3px solid $color-primary-accent;
+        }
+        
         &__list-item--active{
-            color: $white;
-        font-weight: bold;
-        border-bottom: 3px solid $white;
+            color: $color-primary-accent;
+       font-family: Avenir-demi;
+        border-bottom: 3px solid $color-primary-accent;
+
            }
 }
 

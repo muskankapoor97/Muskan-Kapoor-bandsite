@@ -47,9 +47,13 @@ header {
   justify-content: space-between;
   margin: 0;
 }
+.navbar__list-item:not(.list-item--active):hover {
+  color: #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+}
 .navbar__list-item--active {
   color: #FFFFFF;
-  font-weight: bold;
+  font-family: Avenir-demi;
   border-bottom: 3px solid #FFFFFF;
 }
 
@@ -108,6 +112,10 @@ header {
     padding-top: 2%;
   }
 }
+.band, .gallery {
+  color: #323232;
+}
+
 .hero {
   background-image: url(../assets/images/hero-bio.jpg);
   background-position: bottom;
@@ -123,7 +131,7 @@ header {
   position: absolute;
   height: 100%;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 1rem;
   background: rgba(50, 50, 50, 0.4);
 }
 
@@ -131,7 +139,7 @@ header {
   position: absolute;
   top: 40%;
   color: #FFFFFF;
-  font-size: 32px;
+  font-size: 2rem;
   font-family: avenir-demi;
 }
 
@@ -158,16 +166,16 @@ header {
 }
 
 .band {
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 .band__title {
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   font-family: Avenir-demi;
 }
 .band .hero__title {
   font-size: 32px;
-  line-height: 32px;
+  line-height: 2rem;
   font-family: Avenir-demi;
 }
 
@@ -176,7 +184,7 @@ header {
 }
 .band__title {
   padding-top: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 .band__quote {
   font-size: 18px;
@@ -187,7 +195,7 @@ header {
 }
 .band__name {
   padding-top: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   color: #000000;
 }
 .band__description {
@@ -208,9 +216,9 @@ header {
 }
 .gallery__heading {
   padding-top: 24px;
-  padding-bottom: 16px;
-  font-size: 32px;
-  line-height: 32px;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-family: Avenir-demi;
 }
 .gallery__image {
@@ -245,7 +253,7 @@ header {
     line-height: 22px;
   }
   .band__name {
-    padding-top: 48px;
+    padding-top: 3rem;
     padding-bottom: 36px;
     font-size: 31px;
     font-family: Avenir-demi;
@@ -260,29 +268,32 @@ header {
     margin: 0%;
   }
   .band__title, .gallery__heading {
-    padding-top: 48px;
+    padding-top: 3rem;
     padding-bottom: 36px;
     font-size: 47px;
     line-height: 44px;
   }
   .gallery {
-    padding: 0 36px;
+    padding: 28px 36px;
   }
   .gallery__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
   }
   .gallery__list-item {
-    width: 30%;
-    margin: 0.8em;
+    width: 29.8%;
+    margin: 0.4em 1.4em 0.6em 0;
   }
 }
 @media only screen and (min-width: 1280px) {
   .overlay, .band, .gallery {
     padding: 0 10rem;
+  }
+  .gallery {
+    padding: 1rem 10rem;
   }
   .hero {
     height: 46rem;
@@ -303,21 +314,22 @@ header {
 }
 
 .comments {
-  padding: 0 16px;
+  color: #323232;
+  padding: 0 1rem;
 }
 .comments__heading {
   padding-top: 24px;
-  padding-bottom: 16px;
-  font-size: 32px;
-  line-height: 32px;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-family: Avenir-demi;
 }
 .comments__image-container {
   background: url(../assets/images/Mohan-muruge.jpg);
   background-size: cover;
   border-radius: 50%;
-  width: 48px;
-  max-height: 48px;
+  width: 3rem;
+  max-height: 3rem;
   margin-top: 1rem;
   -o-object-fit: contain;
      object-fit: contain;
@@ -332,7 +344,7 @@ header {
   width: 82%;
 }
 .comments__form-inputContainer {
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 .comments__form-label {
   padding-bottom: 4px;
@@ -368,6 +380,7 @@ header {
 }
 
 .comment {
+  min-width: 87%;
   max-width: 82%;
 }
 .comment__container {
@@ -377,14 +390,14 @@ header {
 .comment__image-container {
   background-color: #E1E1E1;
   border-radius: 50%;
-  width: 48px;
-  max-height: 48px;
+  width: 3rem;
+  max-height: 3rem;
   margin-top: 1rem;
 }
 .comment__heading {
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 1rem 0;
   font-size: 1rem;
 }
 .comment__name {
@@ -412,7 +425,7 @@ hr {
   .comments__heading {
     font-size: 47px;
     line-height: 44px;
-    padding-top: 48px;
+    padding-top: 3rem;
     padding-bottom: 36px;
   }
   .comments__image-container {
@@ -420,12 +433,12 @@ hr {
     max-height: 62px;
   }
   .comments__form {
-    width: 90%;
+    width: 87%;
   }
   .comments__container {
     font-size: 19px;
     line-height: 27px;
-    margin-bottom: 2.5rem;
+    margin: 0 6rem 2.5rem 6rem;
   }
   .comments__form-label {
     font-size: 16px;
@@ -439,34 +452,36 @@ hr {
   }
   .comments__form-submit {
     max-width: 29%;
-    margin-left: 31rem;
   }
   .comment {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    max-width: 90%;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    min-width: 86%;
   }
   .comment__image-container {
     width: 62px;
     max-height: 62px;
   }
+  .button__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .comments {
-    padding: 0 31rem;
+    margin: 0 14rem;
   }
   .comments__wrapper {
-    padding: -1 24rem;
+    padding: 0 5rem;
   }
   .comments__form {
     width: 87%;
   }
   .comments__form-submit {
     max-width: 40%;
-    margin-left: 19rem;
   }
   .comment {
-    max-width: 87%;
+    max-width: 86%;
     padding-top: 0;
   }
 }
@@ -490,8 +505,8 @@ a {
 .footer__heading {
   padding-top: 24px;
   padding-bottom: 16px;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   font-family: Avenir-demi;
   color: #FFFFFF;
 }
@@ -520,7 +535,7 @@ a {
 }
 
 .contact__container, .contact__container-item {
-  padding-top: 16px;
+  padding-top: 1rem;
   padding-left: 0px;
   font-size: 17px;
   line-height: 25px;
@@ -534,26 +549,94 @@ a {
     padding: 0 36px;
   }
   .footer__heading {
-    padding-top: 48px;
+    padding-top: 3rem;
     padding-bottom: 36px;
     font-size: 47px;
     line-height: 44px;
+    min-width: 17rem;
+    margin-right: 1rem;
   }
   .footer__icons {
-    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 36px;
     align-items: center;
+    display: inline;
+    min-width: 16em;
   }
   .footer__bottom {
     padding-top: 36px;
   }
   .footer__top {
     display: flex;
+    justify-content: space-between;
   }
   .footer__logo-top {
     display: block;
     height: 1.5em;
-    margin-top: 48px;
-    margin-left: 17rem;
+    margin-top: 3rem;
+    margin-left: 8.5rem;
+  }
+  .footer__logo-bottom {
+    display: none;
+  }
+  .footer__copyright {
+    font-size: 17px;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    min-width: 70%;
+  }
+  .contact__container, .contact__container-item {
+    padding-top: 36px;
+  }
+  .contact__container-item--bold {
+    padding-top: 0%;
+    width: 16rem;
+  }
+}
+.icon {
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 0 10rem;
+  }
+  .footer__logo-top {
+    margin-left: 24rem;
+  }
+  .footer__heading {
+    padding-top: 3rem;
+    padding-bottom: 36px;
+    font-size: 47px;
+    line-height: 44px;
+    min-width: 17rem;
+    margin-right: 1rem;
+  }
+  .footer__icons {
+    padding-top: 3rem;
+    padding-bottom: 36px;
+    align-items: center;
+    display: inline;
+    min-width: 16em;
+  }
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__bottom {
+    padding-top: 36px;
+  }
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__logo-top {
+    display: block;
+    height: 1.5em;
+    margin-top: 3rem;
+    margin-left: 8.5rem;
   }
   .footer__logo-bottom {
     display: none;
@@ -562,27 +645,19 @@ a {
     font-size: 17px;
   }
   .icon {
-    padding-left: 2.7em;
+    margin-right: 1rem;
   }
   .contact {
     display: flex;
-  }
-  .contact__container {
-    margin-right: 5em;
+    justify-content: space-between;
+    min-width: 70%;
   }
   .contact__container, .contact__container-item {
     padding-top: 36px;
   }
   .contact__container-item--bold {
     padding-top: 0%;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .footer {
-    padding: 0 10rem;
-  }
-  .footer__logo-top {
-    margin-left: 24rem;
+    width: 16rem;
   }
 }
 html, body {
